@@ -6,9 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <H2>hello world</H2>
+    @if($name == 'Shweta')
+        <h1>Hello, {{$name}}</h1>
+    @else
+        <h1>Who are you</h1>
+    @endif
+    <p>The date is {{date("Y-m-d")}}</p>
+    <p>The current time is {{date("H:i:s")}}</p>
     <a href="/testing">Click me</a>
     <a href="/home">Home</a>
     <a href="/login">login</a>
+    <a href="/hi">Hi Hi</a>
+    <a href="/add">Add Dish</a> <br>
+    <a href="/user/2/shweta">you (passing data through url)</a> <br>
+    <a href="/multi/1">Multiplication</a>
 </body>
 </html>
